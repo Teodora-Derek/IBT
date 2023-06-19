@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="pictures/favicon_io/android-chrome-512x512.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+        rel="stylesheet"
+        />
+        <link href="./styles/login.css" rel="stylesheet" />
+        <title>Login / Sign in - myCar.bg</title>
+        <script src="scripts/reusable_nav.js" defer></script>
+        <script src="./scripts/login.js" defer></script>
+    </head>
+    <body>
+        <div class="background" id="reusable-content"></div>
+        
+        <div class="tab">
+            <button id="loginNavBtn" class="tablinks active">Login</button>
+            <button id="signUpNavBtn" class="tablinks">Sign Up</button>
+            <button id="signOutNavBtn" class="tablinks">Sign Out</button>
+        </div>
+        
+        <div id="id01" class="tabcontent" style="display: block;">
+            <div>
+                <div class="imgcontainer">
+                    <img src="./pictures/avatar.png" alt="Avatar" class="avatar" />
+                </div>
+                
+                <div class="container">
+                    <h2>Login</h2>
+                    <hr>
+                    <label for="uname"><b>Username</b></label>
+                    <input
+                    id="usernameLogin"
+                    type="text"
+                    placeholder="Enter Username"
+                    name="uname"
+                    required
+                    />
+                    
+                    <label for="psw"><b>Password</b></label>
+                    <input
+                        id="userPassLogin" 
+                        type="password"
+                        placeholder="Enter Password"
+                        name="psw"
+                        required
+                        />
+                        <span class="psw">Forgot <a href="#">password</a>?</span>
+                        
+                        <button id="loginBtn" type="submit">Login</button>
+                        <label>
+                            <input
+                            type="checkbox"
+                            checked="checked"
+                            name="remember"
+                            />
+                            Remember me
+                        </label>
+                    </div>
+                </div>
+        </div>
+        
+        <div id="id02" class="tabcontent" style="display: none;">
+            <div>
+                <div class="container">
+                <h2>Sign Up</h2>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input id="username" type="text" placeholder="Enter Email" name="email" required>
+                <label for="psw"><b>Password</b></label>
+                    <input id="userPass" type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input id="userPassRepeat" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+                    <p>By creating an account you agree to our Terms & Privacy.</p>   
+                    <div class="clearfix">
+                        <button id="cancelBtn" type="button" class="cancelbtn">Cancel</button>
+                        <button id="signUpBtn" type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="id03" class="tabcontent" style="display: none;">
+            <p>You are logged out now.</p>
+        </div>
+    </body>
+</html>

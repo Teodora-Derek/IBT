@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="pictures/favicon_io/android-chrome-512x512.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link href="styles/search_style.css" rel="stylesheet" />
+        <title>Search a car - myCar.bg</title>
+        <script src="scripts/reusable_nav.js" defer></script>
+        <script src="scripts/search.js" defer></script>
+    </head>
+    <body>
+        <div class="background" id="reusable-content"></div>
+        
+        <div class="container">
+            <form action="#">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="brand">Brand</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="brand" name="brand">
+                            <option>Select a car brand</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="model">Model</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="model" name="model">
+                            <option>Select a car model</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="category">Category</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="category" name="category">
+                            <option>Select a car category</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input id="search" type="button" value="Submit"/>
+                </div>
+            </form>
+        </div>
+
+        <p>The following results were found:</p>
+        <div id="car-container" class="car-container"></div>
+    </body>
+</html>

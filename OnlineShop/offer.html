@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sale a car</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="pictures/favicon_io/android-chrome-512x512.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/offer.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <script src="scripts/reusable_nav.js" defer></script>
+        <script src="./scripts/offer.js" defer></script>
+    </head>
+    <body>
+        <div class="background" id="reusable-content"></div>
+        <div id="noUserId">
+            <p>
+                To add an offer, please login first! Go to "My Profile" ->
+                Login/Sign Up <br />
+                or simply click the button bellow
+            </p>
+            <button id="noUserIdLoginBtn" type="submit" href="./login.html">
+                Login/Sign Up
+            </button>
+        </div>
+
+        <div id="testbox" class="testbox">
+            <form>
+                <div class="banner">
+                    <h1>Sale a car</h1>
+                </div>
+
+                <div class="item">
+                    <div id="dropzone">Drag and drop an image here</div>
+                    <input type="file" id="uploadBtn" accept="image/*" />
+                    <div class="upload-buttons">
+                        <button class="upload-button">Upload Image</button>
+                        <button class="clear-button">Clear Image</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <p>Brand</p>
+                    <input id="brandInput" type="text" name="name" required />
+                </div>
+                <div class="item">
+                    <p>Model</p>
+                    <input id="modelInput" type="text" name="name" required />
+                </div>
+                <div class="item">
+                    <p>Price in €</p>
+                    <input id="priceInput" type="number" name="name" required />
+                </div>
+                <div class="item">
+                    <p>Manufacture Date</p>
+                    <input
+                        id="manufactureDateInput"
+                        type="date"
+                        name="bdate"
+                        required
+                    />
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="item">
+                    <p>Engine</p>
+                    <input id="engineInput" type="text" name="name" required />
+                </div>
+                <div class="item">
+                    <p>Liters</p>
+                    <input id="litersInput" type="text" name="name" required />
+                </div>
+                <div class="item">
+                    <p>Transmission</p>
+                    <input
+                        id="transmissionInput"
+                        type="text"
+                        name="name"
+                        required
+                    />
+                </div>
+                <div class="item">
+                    <p>Category</p>
+                    <input
+                        id="categoryInput"
+                        type="text"
+                        name="name"
+                        required
+                    />
+                </div>
+                <div class="item">
+                    <p>Mileage</p>
+                    <input
+                        id="mileageInput"
+                        type="number"
+                        name="name"
+                        required
+                    />
+                </div>
+
+                <div class="item">
+                    <p>Contact</p>
+                    <input
+                        id="phoneInput"
+                        type="tel"
+                        name="name"
+                        pattern="(0[0-9]{9})"
+                        placeholder="Phone number of type: 0xxxxxxxxx"
+                        required
+                    />
+
+                    <div class="city-item">
+                        <input
+                            id="cityInput"
+                            type="text"
+                            name="name"
+                            placeholder="City"
+                            required
+                        />
+                        <input
+                            id="regionInput"
+                            type="text"
+                            name="name"
+                            placeholder="Region"
+                            required
+                        />
+                        <input
+                            id="countryInput"
+                            type="text"
+                            name="name"
+                            placeholder="Country"
+                            required
+                        />
+                    </div>
+                </div>
+                <div class="btn-block">
+                    <button id="submitOfferBtn">SEND</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+﻿* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+}
+
+.background {
+    width: 100%;
+    height: 90vh;
+    background-image: url('../pictures/BmwWallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*This is the top-cars css section -> */
+
+.top-cars {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color: ghostwhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+    .top-cars h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .top-cars ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .top-cars li {
+        display: flex;
+        min-width: 30rem;
+        height: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 2rem;
+    }
+
+        .top-cars li button {
+            display: flex;
+            width: 400px;
+            height: auto;
+            border-width: 2px;
+            border-style: outset;
+            border-color: black;
+            border-radius: 15px;
+            border-image: initial;
+            box-shadow: 0.2rem 0.2rem gray;
+            margin: 0;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            overflow: hidden;
+        }
+
+            .top-cars li button:hover {
+                cursor: pointer;
+            }
+
+            .top-cars li button .card-info {
+                display: inline-block;
+                width: calc(90%);
+                height: calc(48%);
+            }
+
+                .top-cars li button .card-info h2, .top-cars li button .card-info h3 {
+                    margin: 0.5rem 1rem;
+                    overflow: hidden;
+                }
+
+        .top-cars li img {
+            display: inline-block;
+            width: calc(98%);
+            height: calc(50%);
+            padding: 0.5rem;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: clip;
+            border-top-left-radius: 10% 15%;
+            border-top-right-radius: 10% 15%;
+            border-bottom-left-radius: 10% 15%;
+            border-bottom-right-radius: 10% 15%;
+        }
